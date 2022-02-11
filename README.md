@@ -1,5 +1,4 @@
 ![](https://img.shields.io/badge/Framework-React%2017-informational?style=flat&logo=React&logoColor=white&color=darkblue)
-![](https://img.shields.io/badge/Auth-Firebase-informational?style=flat&logo=firebase&logoColor=white&color=orange)
 ![](https://img.shields.io/badge/Preprocessor-Sass-informational?style=flat&logo=sass&logoColor=white&color=ff69b4)
 ![](https://img.shields.io/badge/Auth-Firebase-informational?style=flat&logo=firebase&logoColor=white&color=orange)
 
