@@ -27,7 +27,7 @@ describe('Tests on authReducer', () => {
         };
 
         const action = {
-            type: 'aasdasdasd',
+            type: 'hola desde prueba unitaria',
         };
 
         const state = authReducer(initState, action);
