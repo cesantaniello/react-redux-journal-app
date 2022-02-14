@@ -3,13 +3,28 @@ import thunk from 'redux-thunk';
 import { startNewNote } from '../../actions/notes';
 import { db } from '../../firebase/firebase-config';
 import { types } from '../../types/types';
+import {startUploading} from '../../actions/notes';
+import {fileUpload} from '../../helpers/fileUpload';
+
+jest.mock('../../helpers/fileUpload', () => ({
+    fileUpload: jest.fn(() => {
+        return Promise.resolve('https://hola-mundo.com/cosa.jpg');
+    })
+}));
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
 const store = mockStore({
     auth: {
-        uid: 'test'
+        uid: 'TESTING'
+    },
+    notes: {
+        active: {
+            id: '4uqArBJSXROPomcnxIGK',
+            title: 'Hola',
+            body: 'Mundo'
+        }
     }
 });
 
